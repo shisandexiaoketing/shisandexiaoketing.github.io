@@ -1,0 +1,214 @@
+---
+title:  3D标签云
+date: 2018-08-23 21:26:20
+description: 3D标签云
+categories:
+- 前端
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <style>
+    .tagBall {
+      top: 50px;
+      width: 500px;
+      height: 500px;
+      margin-left: 40px;
+      bottom: 0px;
+      position: relative;
+    }
+    .tag {
+      display: block;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      color: #000;
+      text-decoration: none;
+      font-size: 3px;
+      font-family: "微软雅黑";
+      font-weight: bold;
+      will-change: transform;
+    }
+    .tag:hover {
+      border: 0px solid #666;
+    }
+  </style>
+  <title>3D标签云</title>
+</head>
+<body>
+<div class="tagBall">
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/odoo">odoo</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/homebrew">homebrew</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/macOs">macOs</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/python">python</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/Pycharm">Pycharm</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/wkhtmltopdf">wkhtmltopdf</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/PostgreSQL">PostgreSQL</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/开发工具破解">开发工具破解</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/TiDB">TiDB</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/linux">linux</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/docker">docker</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/centOs7">centOs7</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/ubantu">ubantu</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/git">git</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/mysql">mysql</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/odoo">odoo</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/homebrew">homebrew</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/macOs">macOs</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/python">python</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/Pycharm">Pycharm</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/wkhtmltopdf">wkhtmltopdf</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/PostgreSQL">PostgreSQL</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/开发工具破解">开发工具破解</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/TiDB">TiDB</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/linux">linux</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/docker">docker</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/centOs7">centOs7</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/ubantu">ubantu</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/git">git</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/mysql">mysql</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/odoo">odoo</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/homebrew">homebrew</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/macOs">macOs</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/python">python</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/Pycharm">Pycharm</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/wkhtmltopdf">wkhtmltopdf</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/PostgreSQL">PostgreSQL</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/开发工具破解">开发工具破解</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/TiDB">TiDB</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/linux">linux</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/docker">docker</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/centOs7">centOs7</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/ubantu">ubantu</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/git">git</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/mysql">mysql</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/odoo">odoo</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/homebrew">homebrew</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/macOs">macOs</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/python">python</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/Pycharm">Pycharm</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/wkhtmltopdf">wkhtmltopdf</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/PostgreSQL">PostgreSQL</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/开发工具破解">开发工具破解</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/TiDB">TiDB</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/linux">linux</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/docker">docker</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/centOs7">centOs7</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/ubantu">ubantu</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/git">git</a>
+  <a class="tag" href="https://shisandexiaoketing.github.io/tag/#/mysql">mysql</a>
+
+</div>
+<script>
+  var tagEle = "querySelectorAll" in document ? document.querySelectorAll(".tag") : getClass("tag"),
+      paper = "querySelectorAll" in document ? document.querySelector(".tagBall") : getClass("tagBall")[0];
+  RADIUS = 220,
+      fallLength = 800,
+      tags = [],
+      angleX = Math.PI / 1000,
+      angleY = Math.PI / 1000,
+      CX = paper.offsetWidth / 2,
+      CY = paper.offsetHeight / 2,
+      EX = paper.offsetLeft + document.body.scrollLeft + document.documentElement.scrollLeft,
+      EY = paper.offsetTop + document.body.scrollTop + document.documentElement.scrollTop;
+  function getClass(className) {
+    var ele = document.getElementsByTagName("*");
+    var classEle = [];
+    for (var i = 0; i < ele.length; i++) {
+      var cn = ele[i].className;
+      if (cn === className) {
+        classEle.push(ele[i]);
+      }
+    }
+    return classEle;
+  }
+  function innit() {
+    for (var i = 0; i < tagEle.length; i++) {
+      var a, b;
+      var k = -1 + (2 * (i + 1) - 1) / tagEle.length;
+      var a = Math.acos(k);
+      var b = a * Math.sqrt(tagEle.length * Math.PI);
+      var x = RADIUS * Math.sin(a) * Math.cos(b);
+      var y = RADIUS * Math.sin(a) * Math.sin(b);
+      var z = RADIUS * Math.cos(a);
+      var t = new tag(tagEle[i], x, y, z);
+      tagEle[i].style.color = "rgb(" + parseInt(Math.random() * 225) + "," + parseInt(Math.random() * 225) + "," + parseInt(Math.random() * 225) + ")";
+      tags.push(t);
+      t.move();
+    }
+  }
+  Array.prototype.forEach = function(callback) {
+    for (var i = 0; i < this.length; i++) {
+      callback.call(this[i]);
+    }
+  }
+  function animate() {
+    rotateX();
+    rotateY();
+    tags.forEach(function() {
+      this.move();
+    });
+    requestAnimationFrame(animate);
+  }
+  if ("addEventListener" in window) {
+    paper.addEventListener("mousemove", function(event) {
+      var x = event.clientX - EX - CX;
+      var y = event.clientY - EY - CY;
+      angleY = x * 0.00001;
+      angleX = y * 0.00001;
+    });
+  }
+  else {
+    paper.attachEvent("onmousemove", function(event) {
+      var x = event.clientX - EX - CX;
+      var y = event.clientY - EY - CY;
+      angleY = x * 0.00001;
+      angleX = y * 0.00001;
+    });
+  }
+  function rotateX() {
+    var cos = Math.cos(angleX);
+    var sin = Math.sin(angleX);
+    tags.forEach(function() {
+      var y1 = this.y * cos - this.z * sin;
+      var z1 = this.z * cos + this.y * sin;
+      this.y = y1;
+      this.z = z1;
+    })
+  }
+  function rotateY() {
+    var cos = Math.cos(angleY);
+    var sin = Math.sin(angleY);
+    tags.forEach(function() {
+      var x1 = this.x * cos - this.z * sin;
+      var z1 = this.z * cos + this.x * sin;
+      this.x = x1;
+      this.z = z1;
+    })
+  }
+  var tag = function(ele, x, y, z) {
+    this.ele = ele;
+    this.x = x;
+    this.y = y;
+    this.z = z;
+  }
+  tag.prototype = {
+    move: function() {
+      var scale = fallLength / (fallLength - this.z);
+      var alpha = (this.z + RADIUS) / (2 * RADIUS);
+      var left = this.x + CX - this.ele.offsetWidth / 2 + "px";
+      var top = this.y + CY - this.ele.offsetHeight / 2 + "px";
+      var transform = 'translate(' + left + ', ' + top + ') scale(' + scale + ')';
+      this.ele.style.opacity = alpha + 0.5;
+      this.ele.style.zIndex = parseInt(scale * 100);
+      this.ele.style.transform = transform;
+      this.ele.style.webkitTransform = transform;
+    }
+  }
+  innit();
+  animate();
+</script>
+</body>
+</html>
